@@ -44,7 +44,6 @@ export async function transactionsRoutes(app: FastifyInstance) {
 
   app.post('/', async (request, reply) => {
     try {
-      console.log('chamou')
       const createSchemaTransactionSchema = z.object({
         title: z.string(),
         amount: z.number(),
