@@ -1,2 +1,3 @@
 node_modules
-dv/app.db
+db/app.db
+.env
