@@ -74,9 +74,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
 
       reply.status(201).send()
     } catch (error) {
-      if (error instanceof ZodError) {
-        reply.status(400).send(JSON.stringify(error))
-      }
+      reply.status(400).send(JSON.stringify(error))
     }
   })
 }
